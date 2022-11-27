@@ -4,6 +4,10 @@ from bson.json_util import loads,dumps
 
 blueprint_book = Blueprint(name='blueprint_book',import_name=__name__)
 
+@blueprint_book.route('/',methods=['GET'])
+def home():
+    return jsonify({'msg':'successfull'})
+
 @blueprint_book.route('/add',methods=['POST'])
 def add_book():
     books_collection.insert_one(request.get_json())
