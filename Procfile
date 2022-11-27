@@ -1,1 +1,1 @@
-web: gunicorn book_service.wsgi:app --preload
+worker: gunicorn book_service.wsgi:app --preload
