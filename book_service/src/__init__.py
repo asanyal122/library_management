@@ -1,6 +1,6 @@
 from flask import Flask
 
-from src.blueprints.blueprint_book import blueprint_book
+from .blueprints.blueprint_book import blueprint_book
 
 
 def create_app():
