@@ -1,1 +1,1 @@
-web: gunicorn book_service.wsgi:app --preload
+web: gunicorn book_service.wsgi:app --preload --port=$PORT
