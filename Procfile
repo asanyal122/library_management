@@ -1,1 +1,1 @@
-web: gunicorn book_service.wsgi:app --preload --port 5000
+web: gunicorn book_service.wsgi:app --preload --port:5000
